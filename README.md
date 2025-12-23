@@ -4,6 +4,8 @@
 
 This is the backend service for a collaborative whiteboard application.
 It handles user authentication, board management, and real-time collaboration through Socket.IO, while persisting data in MongoDB.
+> Part of the **Real-Time Collaborative Whiteboard** project  
+> 👉 Main repository: https://github.com/your-username/collaborative-whiteboard
 
 ---
 
@@ -61,9 +63,10 @@ whiteboard-backend/
 3. **Real-time Collaboration**
 
    * Board join/leave presence
-   * Cursor sharing
+   * * Live cursor sharing across connected users
    * Drawing protocol (start, update, commit, erase)
    * Stored elements are persisted to MongoDB
+   * Designed to minimize event payloads and ensure consistent state across concurrent users.
 
 ---
 
@@ -142,3 +145,4 @@ whiteboard-backend/
 * **CORS** – Cross-origin support
 
 ---
+
